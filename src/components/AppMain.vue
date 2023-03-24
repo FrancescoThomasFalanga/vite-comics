@@ -16,7 +16,7 @@ export default {
                     text: "Subscription",
                 },
                 {
-                    image: "/buy-comics-shop-locator.png",
+                    image: "/img/buy-comics-shop-locator.png",
                     text: "Comic Shop Locator",
                 },
                 {
@@ -49,7 +49,9 @@ export default {
 <style lang="scss" scoped>
 
 main {
+    position: relative;
     background-color: #0282f9;
+    z-index: 2;
 
     .container {
         display: flex;

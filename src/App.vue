@@ -2,7 +2,8 @@
 import AppNavbar from "./components/AppNavbar.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
-import AppFooter from "./components/AppFooter.vue";
+import AppUpperFooter from "./components/AppUpperFooter.vue";
+import AppBottomFooter from "./components/AppBottomFooter.vue";
 
 export default {
   data() {
@@ -15,7 +16,8 @@ export default {
     AppNavbar,
     AppHeader,
     AppMain,
-    AppFooter,
+    AppUpperFooter,
+    AppBottomFooter,
   }
 }
 </script>
@@ -30,7 +32,9 @@ export default {
 
     <AppMain></AppMain>
 
-    <AppFooter></AppFooter>
+    <AppUpperFooter></AppUpperFooter>
+
+    <AppBottomFooter></AppBottomFooter>
 
   </div>
 </template>
