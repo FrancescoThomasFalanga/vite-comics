@@ -32,7 +32,6 @@ export default {
 
     <AppFooter></AppFooter>
 
-    
   </div>
 </template>
 
