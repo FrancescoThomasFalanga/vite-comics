@@ -46,7 +46,7 @@ export default {
         <div class="container">
 
             <div class="flex">
-                <div class="ciao">
+                <div>
                     <div class="margin">
                         <strong>DC COMICS</strong>
                     </div>
@@ -66,7 +66,7 @@ export default {
                     </div>
                 </div>
                 </div>
-                <div class="ciao">
+                <div>
                     <div class="margin">
                         <strong>DC</strong>
                     </div>
@@ -76,7 +76,7 @@ export default {
                         </ul>
                     </div>
                 </div>
-                <div class="ciao">
+                <div>
                     <div class="margin">
                         <strong>SITES</strong>
                     </div>
@@ -91,7 +91,6 @@ export default {
             <div class="absolute">
                 <img src="/img/dc-logo.png" alt="">
             </div>
-
 
         </div>
     </footer>
@@ -119,7 +118,7 @@ footer {
         .flex {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 60px;
             padding: 40px 0 50px;
 
             .margin {
@@ -134,28 +133,26 @@ footer {
             ul {
                 list-style-type: none;
                 color: #74787b;
+
+                li {
+                    font-size: 14px;
+                }
             }
         }
-
+        .absolute {
+            position: absolute;
+            right: 0;
+        
+            img {
+                transform: rotate(340deg);
+                height: 600px;
+                max-height: 600px;
+                object-fit: cover;
+            }
+        }
     }
 }
 
-.ciao {
-    width: calc(100% / 3 - 30px);
-    height: fit-content;
-}
 
-.absolute {
-    position: absolute;
-    right: 0;
-
-}
-
-img {
-    transform: rotate(340deg);
-    height: 600px;
-    max-height: 600px;
-    object-fit: cover;
-}
 
 </style>
