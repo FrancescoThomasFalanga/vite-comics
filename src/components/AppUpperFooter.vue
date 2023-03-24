@@ -89,7 +89,7 @@ export default {
             </div>
 
             <div class="absolute">
-                <img src="/img/dc-logo.png" alt="">
+                <img src="/img/dc-logo-bg.png" alt="">
             </div>
 
         </div>
@@ -103,7 +103,6 @@ footer {
     background-image: url("/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
 
 
     .container {
@@ -141,12 +140,12 @@ footer {
         }
         .absolute {
             position: absolute;
-            right: 0;
+            right: 10px;
         
             img {
-                transform: rotate(340deg);
-                height: 600px;
-                max-height: 600px;
+                transform: rotate(350deg);
+                height: auto;
+                width: 600px;
                 object-fit: cover;
             }
         }
