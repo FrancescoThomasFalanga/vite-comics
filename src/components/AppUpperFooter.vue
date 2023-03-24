@@ -103,13 +103,18 @@ export default {
 footer {
     background-image: url("/img/footer-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+
 
     .container {
+        position: relative;
         margin: 0 auto;
         max-width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
 
         .flex {
             display: flex;
