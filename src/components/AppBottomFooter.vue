@@ -89,6 +89,11 @@ footer {
 
                 li {
                     padding: 10px;
+
+                    img:hover {
+                        background-color: white;
+                        border-radius: 50%;
+                    }
                 }
             }
         }

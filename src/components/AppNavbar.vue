@@ -24,7 +24,7 @@ export default {
     <nav>
         <div class="container">
 
-            <img src="/img/dc-logo.png" alt="">
+            <a href=""><img src="/img/dc-logo.png" alt=""></a>
 
             <div>
                 <ul>
@@ -50,10 +50,14 @@ nav {
         margin: 0 auto;
         max-width: 1200px;
 
-        img {
-            margin: 10px;
-            width: 60px;
+        a {
+            max-height: 60px;
+            
+            img {
+                width: 60px;
+            }
         }
+
 
         ul {
             display: flex;

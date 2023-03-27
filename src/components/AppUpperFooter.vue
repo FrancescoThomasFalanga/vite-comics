@@ -55,8 +55,8 @@ export default {
                             <li v-for="link in dcComicsLinks"> {{ link }} </li>
                         </ul>
                     </div>
-                    <div>
-                        <div class="margin">
+                <div>
+                    <div class="margin">
                         <strong>SHOP</strong>
                     </div>
                     <div>
@@ -65,7 +65,7 @@ export default {
                         </ul>
                     </div>
                 </div>
-                </div>
+            </div>
                 <div>
                     <div class="margin">
                         <strong>DC</strong>
@@ -118,7 +118,7 @@ footer {
             display: flex;
             flex-wrap: wrap;
             gap: 60px;
-            padding: 40px 0 50px;
+            padding: 10px 0 50px;
 
             .margin {
                 margin: 20px 0;
