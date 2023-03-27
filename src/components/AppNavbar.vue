@@ -80,8 +80,4 @@ nav {
 
 }
 
-#logo {
-    
-}
-
 </style>
