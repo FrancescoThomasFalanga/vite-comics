@@ -19,6 +19,7 @@ export default {
         <div class="card">
             <img :src="thumb" alt="">
             <span> {{ title }} </span>
+
         </div>
 
 </template>
@@ -28,16 +29,20 @@ export default {
 
     .card {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         gap: 10px;
         width: calc(100% / 6);
-        padding: 20px;
+        padding: 15px;
 
         span {
+            padding-bottom: 10px;
             text-transform: uppercase;
             font-size: 14px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
         }
     }
 
