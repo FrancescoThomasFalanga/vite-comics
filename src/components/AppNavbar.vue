@@ -14,8 +14,20 @@ export default {
                 "News",
                 "Shop",
             ],
+
+            activeIndex: 0,
         }
     },
+
+    methods: {
+
+        changeIndex(newIndex) {
+
+            this.activeIndex = newIndex;
+
+        },
+
+    }
 }
 </script>
 
@@ -28,7 +40,7 @@ export default {
 
             <div>
                 <ul>
-                    <li v-for="link in links"> {{ link }} </li>
+                    <li v-for="(link, index) in links" @click="changeIndex(index)" :class="activeIndex == index ? 'active' : '' "> {{ link }} </li>
                 </ul>
             </div>
             
@@ -64,15 +76,26 @@ nav {
             list-style-type: none;
 
             li {
+                position: relative;
                 cursor: pointer;
                 padding: 30px 10px;
                 font-size: 12px;
                 font-weight: bold;
                 text-transform: uppercase;
 
+
+                &.active::before {
+                    content: "";
+                    position: absolute;
+                    display: flex;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 3px solid #0282f9;
+                }
+
                 &:hover {
                     color: #0282f9;
-                    border-bottom: 3px solid #0282f9;
                 }
             }
         }
